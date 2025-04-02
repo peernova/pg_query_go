@@ -401,8 +401,10 @@
 /* #undef HAVE_STRCHRNUL */
 #if __APPLE__
 #include <AvailabilityMacros.h>
+#if defined(MAC_OS_X_VERSION_MIN_REQUIRED) && defined(MAC_OS_X_VERSION_15_4)
 #if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_15_4
     #define HAVE_STRCHRNUL 1
+#endif
 #endif
 #endif
 
