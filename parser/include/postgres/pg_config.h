@@ -400,8 +400,8 @@
 /* Define to 1 if you have the `strchrnul' function. */
 /* #undef HAVE_STRCHRNUL */
 #if __APPLE__
-#include <AvailabilityMacros.h>
-#if defined(MAC_OS_X_VERSION_15_4)
+#include <AvailabilityVersions.h>
+#if defined(MAC_OS_VERSION_15_4)
     #define HAVE_STRCHRNUL 1
 #endif
 #endif
